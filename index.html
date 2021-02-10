@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/media.css">
+    <title>fake-cinema-website</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-and-nav-wrapper">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <div class="logo-name">
+                    <p>Watchcraft</p>
+                    <p id="motto">Watching is our therapy</p>
+                </div>
+            </div>
+
+            <nav class="nav-bar">
+                <div class="nav-list">
+                    <a href="#top-films-wrapper" data-content="Top Films">Top Films</a>
+                    <a href="#choose-film-wrapper" data-content="Buy Tickets">Buy Tickets</a>
+                    <a href="#offers-and-membership-wrapper" data-content="Offers">Offers</a>
+                    <a href="#contact-and-location-wrapper" data-content="Contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="top-films-wrapper" id="top-films-wrapper">
+            <section class="top-films">
+                <h1 class="section-heading">Top Films</h1>
+                <div class="top-films-slideshow">
+                    <i class="left-arrow far fa-arrow-alt-circle-left"></i>
+                    <div class="top-film top-film-1 hidden-left-1" id="slide-1">
+                        <img src="img/top-film-1.jpg" alt="top-film-1-poster">
+                        <p>see trailer</p>
+                    </div>
+                    <div class="top-film top-film-2" id="slide-2">
+                        <img src="img/top-film-2.jpg" alt="top-film-2-poster">
+                        <p>see trailer</p>
+                    </div>
+                    <div class="top-film top-film-3" id="slide-3">
+                        <img src="img/top-film-3.jpg" alt="top-film-3-poster">
+                        <p>see trailer</p>
+                    </div>
+                    <div class="top-film top-film-4" id="slide-4">
+                        <img src="img/top-film-4.jpg" alt="top-film-4-poster">
+                        <p>see trailer</p>
+                    </div>
+                    <div class="top-film top-film-5" id="slide-5">
+                        <img src="img/top-film-5.jpg" alt="top-film-5-poster">
+                        <p>see trailer</p>
+                    </div>
+                    <div class="top-film top-film-6" id="slide-6">
+                        <img src="img/top-film-6.jpg" alt="top-film-6-poster">
+                        <p>see trailer</p>
+                    </div>
+                    <div class="top-film top-film-7" id="slide-7">
+                        <img src="img/top-film-7.jpg" alt="top-film-7-poster">
+                        <p>see trailer</p>
+                    </div>
+                    <div class="top-film top-film-8" id="slide-8">
+                        <img src="img/top-film-8.jpg" alt="top-film-8-poster">
+                        <p>see trailer</p>
+                    </div>
+                    <i class="right-arrow far fa-arrow-alt-circle-right"></i>
+                </div>
+            </section>
+        </div>
+
+        <div class="choose-film-wrapper" id="choose-film-wrapper">
+            <section class="choose-film-section">
+                <h1 class="section-heading">Choose the film</h1>
+                <h2>buy the tickets</h2>
+                <div class="choose-film">
+                    <div class="choose-film-filter">
+                        <div class="all active-tab" id="all">All</div>
+                        <div class="coming-soon" id="coming-soon">Coming Soon</div>
+                        <div class="filter-by" id="filter-by">Filter By <i class="fas fa-filter"></i></div>
+                    </div>
+                    <div class="tab-indicator">
+                        <div class="indicator all-active"></div>
+                    </div>
+                    <div class="film-list">
+                        <div class="film crime" id="film-1">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/top-film-1.jpg" alt="top-film-1-poster">
+                            <p class="film-name">the little things</p>
+                        </div>
+                        <div class="film drama" id="film-2">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/top-film-2.jpg" alt="top-film-2-poster">
+                            <p class="film-name">the mauritanian</p>
+                        </div>
+                        <div class="film horror" id="film-3">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/top-film-3.jpg" alt="top-film-3-poster">
+                            <p class="film-name">saint maud</p>
+                        </div>
+                        <div class="film drama coming-soon-film" id="film-4">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/top-film-4.jpg" alt="top-film-4-poster">
+                            <p class="film-name">malcolm & marie</p>
+                        </div>
+                        <div class="film drama" id="film-5">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/top-film-5.jpg" alt="top-film-5-poster">
+                            <p class="film-name">jungleland</p>
+                        </div>
+                        <div class="film thriller coming-soon-film" id="film-6">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/top-film-6.jpg" alt="top-film-6-poster">
+                            <p class="film-name">i'm thinking of ending things</p>
+                        </div>
+                        <div class="film drama" id="film-7">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/top-film-7.jpg" alt="top-film-7-poster">
+                            <p class="film-name">capone</p>
+                        </div>
+                        <div class="film horror" id="film-8">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/top-film-8.jpg" alt="top-film-8-poster">
+                            <p class="film-name">sea fever</p>
+                        </div>
+                        <div class="film drama" id="film-9">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/film-9.jpg" alt="film-9-poster">
+                            <p class="film-name">supernova</p>
+                        </div>
+                        <div class="film drama coming-soon-film" id="film-10">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/film-10.jpg" alt="film-10-poster">
+                            <p class="film-name">radioactive</p>
+                        </div>
+                        <div class="film action" id="film-11">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/film-11.jpg" alt="film-11-poster">
+                            <p class="film-name">AVA</p>
+                        </div>
+                        <div class="film drama" id="film-12">
+                            <div class="ticket">
+                                <a href="buy-tickets.html"><i class="fas fa-ticket-alt"></i></a>
+                                <div class="click-to-buy-tickets">Click to buy tickets</div>
+                            </div>
+                            <img src="img/film-12.jpg" alt="film-12-poster">
+                            <p class="film-name">shirley</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="filter">
+                    <i class="fas fa-times exit-filter"></i>
+                    <div class="filter-options">
+                        <div class="comedy genre">
+                            <div class="genre-selection" id="comedy"></div>
+                            <p>Comedy</p>
+                        </div>
+                        <div class="horror genre">
+                            <div class="genre-selection" id="horror"></div>
+                            <p>Horror</p>
+                        </div>
+                        <div class="thriller genre">
+                            <div class="genre-selection" id="thriller"></div>
+                            <p>Thriller</p>
+                        </div>
+                        <div class="action genre">
+                            <div class="genre-selection" id="action"></div>
+                            <p>Action</p>
+                        </div>
+                        <div class="drama genre">
+                            <div class="genre-selection" id="drama"></div>
+                            <p>Drama</p>
+                        </div>
+                        <div class="crime genre">
+                            <div class="genre-selection" id="crime"></div>
+                            <p>Crime</p>
+                        </div>
+                    </div>
+                    <a href="#" class="filter-btn">Filter</a>
+                </div>s
+            </section>
+        </div>
+
+        <div class="offers-and-membership-wrapper" id="offers-and-membership-wrapper">
+            <div class="offers-and-membership-section">
+                <h1 class="section-heading">Offers and Memberships</h1>
+                <div class="offer-wrapper unlimited-card-wrapper">
+                    <img src="./img/unlimited-card.png" alt="unlimited-card-image">
+                    <div class="unlimited-card-information">
+                        <h1>unlimited card for 29.99$ per month</h1>
+                        <p>Being an Unlimited card holder gives you access to all the 2D films you can handle for one monthly price. Watch what you want, when you want, as many times as you want. Plus, save money when watching films in 3D, Superscreen, IMAX, VIP, D-Box, 4DX, ScreenX and Event Cinema. After you've been with us for more than 1 year we'll upgrade you to a Premium Card and you'll get into 3D films completely free too! Start enjoying today by using a temporary pass while you wait for your card to arrive in the post.</p>
+                    </div>
+                </div>
+
+                <div class="offer-wrapper gift-card-wrapper">
+                    <img src="./img/gift.png" alt="gift-card-image">
+                    <div class="gift-card-information">
+                        <h1>Gift Cards - One card, endless possibilities</h1>
+                        <p>WATCHCRAFT prides itself on being the destination of choice for film lovers, with cutting-edge technology and comfort. Just about everyone loves the big screen, so you can’t go wrong with an WATCHCRAFT gift card.
+                            <br><br><br>
+                        Give the gift of cinema and your lucky friend can use their gift to pay for tickets, snacks and drinks..</p>
+                    </div>
+                </div>
+
+                <div class="other-offers-wrapper">
+                    <div class="limitless">
+                        <img src="./img/limitless.jpg" alt="limitless-img">
+                        <h1 class="other-offers-heading">See all the films</h1>
+                        <p class="other-offers-paragraph">If you love your films, treat yourself to a myLIMITLESS membership and join the ultimate scheme for film fanatics. Visit us regularly? You might save a bit. Now from only $13.99/month until 31 March 2021.</p>
+                        <a href="#" class="other-offers-btn">Join myLIMITLESS <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="super-saver">
+                        <img src="./img/super-saver.jpg" alt="super-saver-img">
+                        <h1 class="other-offers-heading">SuperSaver tickets</h1>
+                        <p class="other-offers-paragraph">Save money and see the films that everyone’s raving about. Look for SuperSaver tickets at most of our cinemas and enjoy more visits to WATCHCRAFT.</p>
+                        <a href="#" class="other-offers-btn">Find SuperSaver Tickets <i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                    <div class="current-offers">
+                        <div class="competitions">
+                            <h1 class="other-offers-heading">Current Offers & Competitions</h1>
+                            <p class="other-offers-paragraph">We offer some of the best competitions, prize draws and exclusive giveaways when you book online to see a film at WATCHCRAFT. Check our latest offers to get amazing gifts.</p>
+                            <a href="#" class="other-offers-btn">Find out more <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                        <div class="screen-unseen">
+                            <h1 class="other-offers-heading">See it at screen unseen</h1>
+                            <p class="other-offers-paragraph">Going to WATCHCRAFT without knowing which film you’ll be seeing – what fun! At Screen Unseen, we only show quality, soon-to-be-released films that we’ve given a five-star review.</p>
+                            <a href="#" class="other-offers-btn">Find out more <i class="fas fa-angle-double-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-and-location-wrapper" id="contact-and-location-wrapper">
+            <section class="contact-and-location-section">
+                <div class="contact">
+                    <h1 class="section-heading">Contact</h1>
+                    <div class="contact-information">
+                        <i class="fas fa-phone-alt"></i>
+                        <p class="contact-paragraph">For any more information Contact us at</p>
+                        <h3 class="contact-heading">01 333 436 982</h3>
+                        <h3 class="contact-heading">watchcraft@cm.com</h3>
+                        <h3><i class="fab fa-facebook-f"></i><i class="fab fa-instagram"></i></h3>
+                    </div>
+                </div>
+                <div class="contact">
+                    <h1 class="section-heading">Location</h1>
+                    <div class="contact-information">
+                        <i class="fas fa-home"></i>
+                        <p class="contact-paragraph">Or visit us in Macklepark</p>
+                        <h3 class="contact-heading">3635 Boardman Canfield Rd</h3>
+                        <h3 class="contact-heading">Canfield, Ohio(OH), 44406</h3>
+                        <p class="contact-paragraph">Opening Hours:
+                            Open 7 days a week</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer-wrapper">
+            <footer>
+                <ul class="footer-list column-1">
+                    <li class="footer-list-item">
+                        <a href="#">Cookie Policy</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Privacy and Legal</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Corporate Responsibility</a>
+                    </li>
+                </ul>
+                <ul class="footer-list column-2">
+                    <li class="footer-list-item">
+                        <a href="#">Help</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Accessibility</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Allergen Information</a>
+                    </li>
+                </ul>
+                <ul class="footer-list column-3">
+                    <li class="footer-list-item">
+                        <a href="#">About us</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Careers</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Corporate Events</a>
+                    </li>
+                </ul>
+            </footer>
+            <div class="copyright">Designed and Created by Sebastian Haczela &copy; 2021</div>
+        </div>
+    </div>
+    <script type="module" src="./src/app/app.js"></script>
+    <script type="module" src="./src/app/films.js"></script>
+</body>
+</html>

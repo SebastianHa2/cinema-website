@@ -1,0 +1,421 @@
+/* MEDIA QUERIES */ 
+
+@media(min-width: 1500px){
+    .indicator.filter-by{
+        left: 86%;
+        width: 14%;
+    }
+
+    .indicator.filter-by-active{
+        left: 86%;
+        width: 14%;
+    }
+}
+
+@media(max-width: 1400px){
+    .top-film img{
+        width: 30rem;
+    }
+    .indicator.filter-by{
+        left: 82%;
+        width: 18%;
+    }
+
+    .indicator.filter-by-active{
+        left: 82%;
+        width: 18%;
+    }
+}
+
+@media(max-width: 1300px){
+    .indicator.filter-by{
+        left: 80%;
+        width: 20%;
+    }
+
+    .indicator.filter-by-active{
+        left: 80%;
+        width: 20%;
+    }
+
+    .offer-wrapper{
+        height: auto;
+        flex-direction: column;
+    }
+
+    .unlimited-card-information{
+        text-align: center;
+    }
+
+    .unlimited-card-information p{
+        width: 70%;
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+    .gift-card-information{
+        text-align: center;
+    }
+
+    .gift-card-wrapper img{
+        margin-bottom: 2rem;
+    }
+
+    .gift-card-information p{
+        width: 70%;
+        margin: 2rem auto;
+        text-align: center;
+    }
+
+    .other-offers-wrapper{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1200px){
+    .indicator.filter-by{
+        left: 78%;
+        width: 22%;
+    }
+
+    .indicator.filter-by-active{
+        left: 78%;
+        width: 22%;
+    }
+
+    .top-film img{
+        width: 25rem;
+    }
+
+    .limitless{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .super-saver{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .other-offers-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .other-offers-heading{
+        text-align: center;
+    }
+
+    .other-offers-paragraph{
+        text-align: center;
+        width: 100%;
+    }
+
+    .current-offers{
+        flex-direction: row;
+        width: 100%;
+        margin-top: 5rem;
+        justify-content: space-around;
+    }
+
+    .competitions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+    }
+
+    .screen-unseen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+    }
+}
+
+@media(max-width: 1100px){
+    .contact-paragraph{
+        font-size: 1.8rem;
+    }
+
+    .contact-heading{
+        font-size: 2.5rem;
+    }
+
+    .indicator.filter-by{
+        left: 76%;
+        width: 24%;
+    }
+
+    .indicator.filter-by-active{
+        left: 76%;
+        width: 24%;
+    }
+}
+
+@media(max-width: 1000px){
+    .top-film img{
+        width: 30rem;
+    }
+
+    #slide-1{
+        left: -150rem;
+    }
+    
+    #slide-2{
+        left: -150rem;
+    }
+    
+    #slide-3{
+        left: -100rem;
+    }
+    
+    #slide-4{
+        left: 1%;
+    }
+    
+    #slide-5{
+        left: 34%;
+    }
+    
+    #slide-6{
+        left: 67%;
+    }
+    
+    #slide-7{
+        left: 200rem;
+    }
+    
+    #slide-8{
+        right: -100rem;
+    }
+
+    .contact-and-location-section{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5rem;
+    }
+
+    .contact{
+        width: 80%;
+    }
+
+    .contact i{
+        margin: 1rem 1rem;
+    }
+}
+
+@media(max-width: 900px){
+    .top-film img{
+        width: 27rem;
+    }
+
+    .indicator.filter-by{
+        left: 72%;
+        width: 28%;
+    }
+
+    .indicator.filter-by-active{
+        left: 72%;
+        width: 28%;
+    }
+}
+
+@media(max-width: 800px){
+    .indicator.filter-by{
+        left: 70%;
+        width: 30%;
+    }
+
+    .indicator.filter-by-active{
+        left: 70%;
+        width: 30%;
+    }
+
+    .top-films.wrapper{
+        height: 200vh;
+    }
+
+    .top-film img{
+        width: 35rem;
+    }
+
+    #slide-1{
+        left: -150rem;
+    }
+    
+    #slide-2{
+        left: -150rem;
+    }
+    
+    #slide-3{
+        left: -100rem;
+    }
+    
+    #slide-4{
+        left: 3%;
+    }
+    
+    #slide-5{
+        left: 52%;
+    }
+    
+    #slide-6{
+        left: 150rem;
+    }
+    
+    #slide-7{
+        left: 200rem;
+    }
+    
+    #slide-8{
+        right: -100rem;
+    }
+
+    .logo-and-nav-wrapper{
+        height: auto;
+    }
+    .nav-bar{
+        width: 100%;
+        margin: 5rem 0 5rem 0;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list a{
+        margin: 1.5rem 0;
+    }
+}
+
+@media(max-width: 750px){
+    #slide-4{
+        left: 1%;
+    }
+    
+    #slide-5{
+        left: 50%;
+    }
+
+    .indicator.filter-by{
+        left: 68%;
+        width: 32%;
+    }
+
+    .indicator.filter-by-active{
+        left: 68%;
+        width: 32%;
+    }
+}
+
+@media(max-width: 700px){
+    .top-film img{
+        width: 30rem;
+    }
+
+    #slide-4{
+        left: 3%;
+    }
+    
+    #slide-5{
+        left: 50%;
+    }
+}
+
+@media(max-width: 650px){
+    #slide-4{
+        left: 1%;
+    }
+    
+    #slide-5{
+        left: 50%;
+    }
+
+    .section-heading{
+        font-size: 3rem;
+    }
+
+    .tab-indicator{
+        display: none;
+    }
+
+    .choose-film-filter{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .choose-film-filter > *{
+        margin: 3rem 0;
+    }
+
+    .filter-by{
+        position: unset;
+    }
+
+    .filter{
+        top: 35rem;
+    }
+}
+
+@media(max-width: 600px){
+    .top-film img{
+        width: 25rem;
+    }
+
+    #slide-4{
+        left: 2%;
+    }
+    
+    #slide-5{
+        left: 52%;
+    }
+}
+
+@media(max-width: 500px){
+    .filter.show{
+        right: 3rem;
+    }
+
+    .filter.show{
+        right: 0.5rem;
+    }
+
+    .filter{
+        width: 35rem;
+    }
+
+    .top-film img{
+        width: 35rem;
+    }
+
+    #slide-4{
+        left: -200rem;
+    }
+    
+    #slide-5{
+        left: 14%;
+    }
+}
+
+
+@media(max-width: 450px){
+    #slide-5{
+        left: 7%;
+    }
+}
+
+@media(max-width: 400px){
+    #slide-5{
+        left: 4%;
+    }
+}
+
+
+

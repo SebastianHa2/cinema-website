@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/buy-tickets-styles.css">
+    <title>fake-cinema-website-buy-tickets</title>
+</head>
+<body>
+    <div class="container-1">
+        <div class="choose-date-and-time-wrapper">
+            <div class="warning">Please choose date, time and specify the number of tickets in the boxes</div>
+            <h1>Choose the date and time</h1>
+            <div class="dates">
+                <div class="date date-0"></div>
+                <div class="date date-1"></div>
+                <div class="date date-2"></div>
+                <div class="date date-3"></div>
+                <div class="date date-4"></div>
+                <div class="date date-5"></div>
+                <div class="date date-6"></div>
+            </div>
+            <div class="times">
+                <div class="time time-1"></div>
+                <div class="time time-2"></div>
+                <div class="time time-3"></div>
+            </div>
+        </div>
+        <div class="buy-tickets-wrapper">
+            <h1>Choose the amount and type of tickets</h1>
+            <section class="buy-tickets">
+                <div class="ticket-options">
+                    <div class="ticket-option">
+                        <label for="single-ticket">Single Tickets</label>
+                        <input type="number" id="single-ticket">
+                        <p>Single Ticket Price: $15</p>
+                    </div>
+                    <div class="ticket-option">
+                        <label for="student-ticket">Student Tickets</label>
+                        <input type="number" id="student-ticket">
+                        <p>Single Ticket Price: $10</p>
+                        <p>*Must provide a student card at entrance</p>
+                    </div>
+                    <div class="ticket-option">
+                        <label for="family-ticket">Family Tickets</label>
+                        <input type="number" id="family-ticket">
+                        <p>two adults two kids price: 35$</p>
+                    </div>
+                </div>
+            </section>
+            <a href="#" class="choose-seats-btn">Choose your seats</a>
+        </div>
+    </div>
+    <div class="container-2">
+        <div class="choose-seats-wrapper">
+            <h1>Choose your seats</h1>
+            <div class="screen">SCREEN</div>
+            <div class="seats-wrapper">
+                <div class="seats seats-left">
+                </div>
+                <div class="letter-indicator">
+                </div>
+                <div class="seats seats-right">
+                </div>
+            </div>
+        </div>
+        <div class="checkout-information-wrapper">
+            <div class="film-information">
+                <div class="film-poster">
+                    <img src="" class="film-url" alt="film-poster">
+                </div>
+                <div class="name-date-time-wrapper">
+                    <div class="film-name"></div>
+                    <div class="date-and-time">08 Feb Mon 16:45</div>
+                </div>
+            </div>
+            <div class="seats-chosen-wrapper">
+                <h1>Seats Chosen</h1>
+                <div class="seats-chosen">
+
+                </div>
+            </div>
+            <div class="information">
+                <div class="personal-information">
+                    <div class="input-group">
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email: </label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="total-price">Total Price: </div>
+                <div class="payment-information">
+                    <div class="pay-card option">Pay Card</div>
+                    <div class="pay-cash option">Pay Cash</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="src/app/checkout/checkout.js"></script>
+</body>
+</html>

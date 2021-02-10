@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 100%;
+    background-color:#1e1f26;
+}
+
+.section-heading{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #f6cd61;
+    text-shadow: 0.2rem 0.3rem 0.3rem #000;
+    text-transform: uppercase;
+}
+
+/* LOGO AND NAVIGATION */
+
+.logo-and-nav-wrapper{
+    width: 100%;
+    background-color:#1e1f26;
+    position: relative;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-left: 12rem;
+}
+
+.nav-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-list a{
+    color: #f6cd61;
+    position: relative;
+    font-size: 2.2rem;
+    transition: all 0.5s;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    text-shadow: 0.1rem 0.3rem 0.3rem #000;
+}
+
+.nav-list a::before{
+    content: attr(data-content);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #7e8d98;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width 0.5s;
+}
+
+.nav-list a:hover::before{
+    width: 100%;
+    text-shadow: 0.1rem 0.3rem 0.3rem #000;
+}
+
+.nav-list a:hover{
+    transform: scale(1.1);
+}
+
+
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 2rem;
+    top: 1rem;
+}
+
+.logo-name p{
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #f6cd61;
+    text-shadow: 0.1rem 0.2rem 0.2rem #000;
+}
+
+.logo img{
+    width: 12rem;
+    margin-bottom: 0.2rem;
+}
+
+#motto{
+    font-size: 1rem;
+}
+
+/* END OF LOGO AND NAVIGATION */
+
+
+
+/* TOP FILMS SLIDESHOW SECTION */
+
+.top-films-wrapper{
+    width: 100%;
+    background-color: #1e1f26;
+    height: 100vh;
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+}
+
+.top-films{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-films-slideshow{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.top-films-slideshow i{
+    z-index: 10;
+    color: #f6cd61;
+    font-size: 5rem;
+    position: absolute;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+    transform: translate(0, -50%);
+}
+
+.top-films-slideshow i:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.left-arrow{
+    left: 5rem;
+    top: 50%;
+}
+
+.right-arrow{
+    right: 5rem;
+    top: 50%;
+    transform: translate(-50%);
+}
+
+.top-film{
+    position: relative;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    transition: left 0.4s;
+}
+
+.top-film img{
+    width: 35rem;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.top-film img:hover{
+    opacity: 1;
+}
+
+.top-film p{
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: all 0.4s;
+}
+
+.top-film p:hover{
+    cursor: pointer;
+    font-size: 2.2rem;
+}
+
+/* SLIDESHOW SLIDES IDS */
+
+#slide-1{
+    left: -100rem;
+}
+
+#slide-2{
+    left: -50rem;
+}
+
+#slide-3{
+    left: 1%;
+}
+
+#slide-4{
+    left: 26%;
+}
+
+#slide-5{
+    left: 51%
+}
+
+#slide-6{
+    left: 76%;
+}
+
+#slide-7{
+    left: 200rem;
+}
+
+#slide-8{
+    right: -100rem;
+}
+
+/* TOP FILMS SLIDESHOW SECTION END */
+
+/* CHOOSE FILM SECTION */
+
+.choose-film-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.choose-film-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.choose-film-section h1{
+    margin-bottom: 0.5rem;
+}
+
+.choose-film-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #f6cd61;
+    text-shadow: 0.2rem 0.3rem 0.3rem #000;
+    margin-bottom: 5rem;
+}
+
+.choose-film{
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.choose-film-filter{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: left;
+    color: #f6cd61;
+    text-transform: uppercase;
+    position: relative;
+    text-shadow: 0.1rem 0.3rem 0.3rem #000;
+}
+
+.filter-by{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 20rem;
+    text-align: center;
+}
+
+
+.filter-by:hover{
+    color: #7e8d98;
+    cursor: pointer;
+}
+
+
+.all{
+    margin: 0 3rem;
+    width: 10rem;
+    text-align: center;
+}
+
+.all.active{
+    color:#7e8d98;
+}
+
+.all.active-tab{
+    color:#7e8d98;
+}
+
+.coming-soon.active{
+    color:#7e8d98;
+}
+
+.coming-soon.active-tab{
+    color:#7e8d98;
+}
+
+.filter-by.active{
+    color:#7e8d98;
+}
+
+.filter-by.active-tab{
+    color:#7e8d98;
+}
+
+.all.non-active{
+    color: #f6cd61;
+}
+
+.coming-soon.non-active{
+    color: #f6cd61;
+}
+
+.filter-by.non-active{
+    color: #f6cd61;
+}
+
+.all:hover{
+    color: #7e8d98;
+    cursor: pointer;
+}
+
+.coming-soon{
+    margin: 0 3rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.coming-soon:hover{
+    color: #7e8d98;
+    cursor: pointer;
+}
+
+.tab-indicator{
+    height: 0.5rem;
+    width: 100%;
+    background-color: #f6cd61;
+    margin-bottom: 2rem;
+    position: relative;
+    box-shadow: 0.2rem 0.2rem 0.2rem #000;
+
+}
+
+.indicator{
+    height: 100%;
+    background-color: #7e8d98;
+    position: absolute;
+    transition: left 0.4s;
+}
+
+.indicator.all-active{
+    width: 16rem;
+    left: 0;
+}
+
+.indicator.coming-soon-active{
+    left: 16rem;
+    width: 26rem;
+}
+
+.indicator.filter-by-active{
+    left: 84%;
+    width: 16%;
+}
+
+.indicator.all{
+    width: 16rem;
+    left: -3rem;
+}
+
+.indicator.coming-soon{
+    left: 13rem;
+    width: 26rem;
+}
+
+.indicator.filter-by{
+    left: 84%;
+    width: 16%;
+}
+
+.film-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: transparent;
+}
+
+.film{
+    width: 30rem;
+    height: 38rem;
+    margin-bottom: 5rem;
+    background-color: transparent;
+    position: relative;
+}
+
+.film img{
+    width: 25rem;
+    position: absolute;
+    right: 0;
+}
+
+.film-name{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    text-shadow: 0.2rem 0.3rem 0.3rem #000;
+}
+
+.ticket{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 3rem;
+    color: #fff;
+    z-index: 50;
+    text-shadow: 0.2rem 0.3rem 0.3rem #000;
+}
+
+.ticket:hover{
+    cursor: pointer;
+}
+
+.ticket i{
+    color: #fff;
+}
+
+.ticket:hover .click-to-buy-tickets{
+    display: block;
+}
+
+.click-to-buy-tickets{
+    left: -100%;
+    bottom: -2.5rem;
+    position: absolute;
+    z-index: 60;
+    font-size: 1rem;
+    width: 10rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: none;
+}
+
+/* FILTER FILMS */
+
+.filter{
+    position: absolute;
+    right: -50rem;
+    top: 20rem;
+    width: 40rem;
+    height: 30rem;
+    background-color: #f6cd61;
+    z-index: 100;
+    border-radius: 1rem;
+    box-shadow: 0.4rem 0.2rem 0.3rem #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.95;
+    transition: right 0.4s;;
+}
+
+.filter.show{
+    right: 7.5rem;
+}
+
+.filter-options{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.genre{
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    font-size: 1.5rem;
+    align-items: center;
+    margin: 1rem 2rem;
+    text-transform: uppercase;
+}
+
+
+.genre-selection{
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    background-color: #7e8d98;
+    transition: background-color 0.3s;
+}
+
+.genre-selection:hover{
+    background-color: #1e1f26;
+    cursor: pointer;
+}
+
+.genre-selection.selected{
+    background-color: #1e1f26;
+}
+
+.filter i{
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 3rem;
+    color:#7e8d98;
+    transition: color 0.3s;
+}
+
+.filter i:hover{
+    cursor: pointer;
+    color: #1e1f26;
+}
+
+.filter-btn{
+    padding: 0.5rem 3rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    color: #7e8d98;
+    letter-spacing: 0.1rem;
+    transition: color 0.3s;
+}
+
+.filter-btn:hover{
+    color: #1e1f26;
+}
+
+/* END OF CHOOSE FILM SECTION */ 
+
+/* OFFERS AND MEMBERSHIP SECTION */ 
+
+.offers-and-membership-wrapper{
+    width: 100%;
+}
+
+.offers-and-membership-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.offer-wrapper{
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    background-color: #5e5656;
+    box-shadow: 0.3rem 0.4rem 0.8rem #000;
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+}
+
+.unlimited-card-wrapper img{
+    width: 40%;
+}
+
+.unlimited-card-information h1{
+    font-size: 2rem;
+    color: #f6cd61;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-shadow: 0.2rem 0.3rem 0.4rem #000;
+}
+
+.unlimited-card-information p{
+    font-size: 1.3rem;
+    color: #fff;
+    width: 80%;
+}
+
+.gift-card-wrapper{
+    margin-bottom: 10rem;
+}
+
+.gift-card-wrapper img{
+    width: 35%;
+    margin: 0 3rem;
+}
+
+.gift-card-wrapper h1{
+    font-size: 2rem;
+    color: #f6cd61;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    text-shadow: 0.2rem 0.3rem 0.4rem #000;
+}
+
+.gift-card-wrapper p{
+    font-size: 1.3rem;
+    color: #fff;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.other-offers-wrapper{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.limitless{
+    width: 30%;
+}
+
+.limitless img, .super-saver img{
+    margin-bottom: 1rem;
+}
+
+.super-saver{
+    width: 30%;
+}
+
+.current-offers{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.competitions{
+    margin-bottom: 5rem;
+}
+
+.other-offers-heading{
+    font-size: 2.5rem;
+    color: #f6cd61;
+    text-transform: uppercase;
+    text-shadow: 0.2rem 0.3rem 0.3rem #000;
+    margin-bottom: 2rem;
+}
+
+.other-offers-paragraph{
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 5rem;
+    width: 90%;
+}
+
+.current-offers p{
+        width: 100%;
+}
+
+.other-offers-btn{
+    font-size: 2rem;
+    color: #2ab7ca;
+    transition: filter 0.3s;
+}
+
+.other-offers-btn:hover{
+    filter: brightness(85%);
+}
+
+/* END OF OFFERS AND MEMBERSHIP SECTION */
+
+/* CONTACT AND LOCATION SECTION */ 
+
+
+
+.contact-and-location-wrapper{
+    width: 100%;
+}
+
+.contact-and-location-section{
+    height: 100%;
+    width: 100%; 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("/img/background.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    color: #fff;
+    text-shadow: 0.3rem 0.2rem 0.5rem #000;
+    margin-top: 9rem;
+}
+
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-information i{
+    margin: 5rem 2rem;
+    font-size: 5rem;
+}
+
+.contact-information h3 i{
+    transition: color 0.3s;
+}
+
+.contact-information h3 i:hover{
+    color: #f6cd61;
+    cursor: pointer;
+}
+
+.contact-paragraph{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 3rem 0;
+    color: #f6cd61;
+}
+
+.contact-heading{
+    font-size: 3rem;
+}
+
+/* END OF CONTACT AND LOCATION SECTION */
+
+/* FOOTER */
+
+.footer-wrapper{
+    width: 100%;
+}
+
+footer{
+    height: 12rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.footer-list-item a{
+    color: #fff;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+
+.footer-list-item a:hover{
+    color: #f6cd61;
+}
+
+.copyright{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+}
+
+
+
+
+
+
+
