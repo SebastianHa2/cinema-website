@@ -1,3 +1,5 @@
+// MAIN PAGE CAROUSEL / TAB INDICATORS 
+
 const UICtr = (function(){
     const indicator = document.querySelector(".indicator"), filter = document.querySelector(".filter"),
     slides = document.querySelectorAll(".top-film"), filmList = document.querySelectorAll(".film"),
@@ -100,7 +102,6 @@ const UICtr = (function(){
         },
 
         // MAKING TAB ACTIVE ON CLICK AND SHOWING THE FILMS AVAILABLE IN THAT TAB OR SHOWING
-        // FILTER OPTIONS
         makeActiveTab: (e) => {
             let target = e.target
             let className = target.id

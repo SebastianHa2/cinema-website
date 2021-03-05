@@ -330,6 +330,10 @@
 }
 
 @media(max-width: 650px){
+    .date{
+        font-size: 1.2rem;
+    }
+
     #slide-4{
         left: 1%;
     }
@@ -375,6 +379,19 @@
     
     #slide-5{
         left: 52%;
+    }
+}
+
+@media(max-width: 550px){
+    .nav-bar{
+        padding-top: 15rem;
+        margin-bottom: 0;
+    }
+
+    .logo{
+        left: 50%;
+        top:  2rem;
+        transform: translateX(-50%);
     }
 }
 

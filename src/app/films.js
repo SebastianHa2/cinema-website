@@ -1,3 +1,5 @@
+// FILTER OPTION FOR FILTERING FILMS BY GENRE 
+
 
 const UIctr2 = (function(){
     const filmList = document.querySelectorAll(".film"), filterOptionsList = document.querySelectorAll(".genre-selection"),
