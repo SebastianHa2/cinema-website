@@ -402,14 +402,6 @@ html{
     cursor: pointer;
 }
 
-.copyright{
-    position: absolute;
-    bottom: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    font-size: 1.2rem;
-}
 
 /* Media queries */
 
@@ -529,6 +521,34 @@ html{
 
     .seats-left{
         width: 45%;
+    }
+
+    .name-date-time-wrapper{
+        font-size: 2rem;
+    }
+
+    .film-poster{
+        margin-right: 3.5rem;
+        margin-left: 1.5rem
+    }
+
+    .film-poster img{
+        width: 16rem;
+    }
+
+    @media(max-width: 400px){
+        .film-poster img{
+            width: 14rem;
+        }
+    }
+
+    .name-date-time-wrapper{
+        font-size: 1.7rem;
+    }
+
+    .film-poster{
+        margin-right: 3rem;
+        margin-left: 2rem
     }
 }
 
